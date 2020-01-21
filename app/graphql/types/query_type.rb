@@ -6,5 +6,9 @@ module Types
     def all_links
       Link.all
     end
+    field :all_users, [UserType], null: false
+    def all_users
+      User.all
+    end
   end
 end
